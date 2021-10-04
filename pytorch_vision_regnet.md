@@ -85,14 +85,27 @@ for i in range(top5_prob.size(0)):
 ### Model Description
 
 RegNet models were proposed in [Designing Network Design Spaces](https://arxiv.org/abs/2003.13678v1).
-Here we have the 14 versions of resnet models, which contains 50, 101 layers repspectively.
-A comparison in model archetechure between resnet50 and resnext50 can be found in Table 1.
+Here we have the two families of the RegNet models: RegNetX and RegNetY. There are 7 models in each
+family. The RegNet design space provides simple and fast networks that work well across a wide 
+range of flop regimes.
 Their 1-crop error rates on imagenet dataset with pretrained models are listed below.
 
 |  Model structure  | Top-1 error | Top-5 error |
 | ----------------- | ----------- | ----------- |
-|  resnext50_32x4d  | 22.38       | 6.30        |
-|  resnext101_32x8d | 20.69       | 5.47        |
+| regnet_x_400mf | 72.834 | 90.950 | 
+| regnet_x_800mf | 75.212 | 92.348 |
+| regnet_x_1_6gf | 77.040 | 93.440 |
+| regnet_x_3_2gf | 78.364 | 93.992 |
+| regnet_x_8gf   | 79.344 | 94.686 | 
+| regnet_x_16gf  | 80.058 | 94.944 |
+| regnet_x_32gf  | 80.622 | 95.248 |
+| regnet_y_400mf | 74.046 | 91.716 |
+| regnet_y_800mf | 76.420 | 93.136 |
+| regnet_y_1_6gf | 77.950 | 93.966 |
+| regnet_y_3_2gf | 78.948 | 94.576 |
+| regnet_y_8gf   | 80.032 | 95.048 |
+| regnet_y_16gf  | 80.424 | 95.240 |
+| regnet_y_32gf  | 80.878 | 95.340 |
 
 ### References
 
