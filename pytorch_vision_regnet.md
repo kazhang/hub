@@ -18,7 +18,7 @@ order: 10
 
 ```python
 import torch
-model = torch.hub.load('pytorch/vision:v0.10.0', 'regnet_x_400mf', pretrained=True)
+model = torch.hub.load('pytorch/vision:v0.11.0', 'regnet_x_400mf', pretrained=True)
 model.eval()
 ```
 
